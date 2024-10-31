@@ -1,0 +1,19 @@
+{
+  "name": "os_website",
+  "version": "1.0.0",
+  "description": "OS style website for the browser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cfinnegan827/os_website.git"
+  },
+  "author": "Connor Finnegan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cfinnegan827/os_website/issues"
+  },
+  "homepage": "https://github.com/cfinnegan827/os_website#readme"
+}
