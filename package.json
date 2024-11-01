@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "OS style website for the browser.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/cfinnegan827/os_website.git"
   },
   "author": "Connor Finnegan",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "package": "^1.0.1",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "next": "15.0.2"
+  }
 }
