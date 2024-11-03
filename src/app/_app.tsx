@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import './globals.scss';
 import type { AppProps /*, AppContext */} from 'next/app';
 
