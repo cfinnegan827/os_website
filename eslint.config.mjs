@@ -5,7 +5,7 @@ import { includeIgnoreFile } from '@eslint/compat';
 import pluginJs from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import pluginReact from 'eslint-plugin-react';
-import simpleImportSort from "eslint-plugin-simple-import-sort";
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
@@ -22,15 +22,15 @@ export default [
       globals: { React: 'readonly', ...globals.browser, ...globals.node }
     },
     plugins: {
-      "simple-import-sort": simpleImportSort,
+      'simple-import-sort': simpleImportSort
     },
     rules: {
       '@typescript-eslint/explicit-function-return-type': 'warn',
       indent: ['error', 2], // 2 spaces for indentation
       quotes: ['error', 'single'], // Enforce single quotes
       semi: ['error', 'always'], // Require semicolons
-      "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
+      'simple-import-sort/imports': 'error',
+      'simple-import-sort/exports': 'error',
       'react/react-in-jsx-scope': 'off'
     }
   },
