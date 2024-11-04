@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.scss';

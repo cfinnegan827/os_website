@@ -16,6 +16,7 @@ export default [
   {files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}']},
   {languageOptions: { globals: {'React' : 'readonly',...globals.browser, ...globals.node} },
     rules: {
+      '@typescript-eslint/explicit-function-return-type': 'warn',
       'indent': ['error', 2],          // 2 spaces for indentation
       'quotes': ['error', 'single'],   // Enforce single quotes
       'semi': ['error', 'always'],     // Require semicolons
