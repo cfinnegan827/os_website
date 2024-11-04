@@ -10,6 +10,7 @@
     "prettier"
   ],
   "rules": {
+    "max-lines": ["error", 100],
     "react/jsx-props-no-spreading": "off"
   }
 }
