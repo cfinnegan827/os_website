@@ -4,11 +4,11 @@ import { fileURLToPath } from 'node:url';
 import { includeIgnoreFile } from '@eslint/compat';
 import pluginJs from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import * as pluginJest from 'eslint-plugin-jest';
 import pluginReact from 'eslint-plugin-react';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const gitignorePath = path.resolve(__dirname, '.gitignore');
@@ -22,9 +22,11 @@ export default [
       globals: { React: 'readonly', ...globals.browser, ...globals.node }
     },
     plugins: {
-      'simple-import-sort': simpleImportSort
+      'simple-import-sort': simpleImportSort,
+      jest: pluginJest
     },
     rules: {
+      '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/explicit-function-return-type': 'warn',
       indent: ['error', 2], // 2 spaces for indentation
       quotes: ['error', 'single'], // Enforce single quotes
